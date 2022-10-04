@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/txtprice"
+            android:layout_width="88dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="12sp"
+            android:paddingTop="12sp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtnombre"
+            tools:text="1" />
+
+        <ImageView
+            android:id="@+id/imgflecha"
+            android:layout_width="51dp"
+
+            android:layout_height="71dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:paddingTop="12sp"
+            android:src="@drawable/flecha_derecha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.98"
+            app:layout_constraintStart_toEndOf="@+id/txtnombre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtnombre"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_toStartOf="@id/imgflecha"
+            android:layout_toEndOf="@id/txtprice"
+            android:fontFamily="sans-serif-medium"
+            android:paddingStart="16sp"
+            android:paddingTop="12sp"
+            android:paddingEnd="16sp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="producto 1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

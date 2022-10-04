@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="587dp"
+            tools:itemCount="11"
+            tools:listitem="@layout/list_item">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/imgcarritocompras"
+            android:layout_width="223dp"
+            android:layout_height="76dp"
+            android:text="CARRITO DE COMPRAS"
+            android:layout_marginTop="600dp"
+            android:layout_marginStart="100sp"></Button>
+
+    </FrameLayout>
+</layout>
